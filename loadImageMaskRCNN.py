@@ -50,7 +50,5 @@ class cobbDataset(utils.Dataset):
 #               print(i)
                 if np.any(m==i):
                     masks.append(m)
-     
-            masks = np.stack(masks, axis=-1)        
-           
+             masks = np.stack(masks, axis=-1)        
         return masks.astype(np.bool), np.ones([masks.shape[-1]], dtype=np.int32)
