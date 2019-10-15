@@ -50,10 +50,7 @@ class cobbDataset(utils.Dataset):
 #               print(i)
                 if np.any(m==i):
                     masks.append(m)
-#                        class_ids.append(class_id)
-        try:
+     
             masks = np.stack(masks, axis=-1)        
-        except:
-            print("no mask found.", info)
-            
+           
         return masks.astype(np.bool), np.ones([masks.shape[-1]], dtype=np.int32)
