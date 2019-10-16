@@ -1,6 +1,6 @@
 class cobbDataset(utils.Dataset):
     def load_cobb(self, dataset_dir):
-        """Load a subset of the CObb dataset.
+        """Load a subset of the Cobb dataset.
            Load a subset of the Cobb dataset from the given dataset_dir.
         """
         # Add classes
